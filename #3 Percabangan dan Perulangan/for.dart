@@ -1,5 +1,6 @@
 void main() {
-  for (index = 10; index < 27; index) {
+  int index = 0;
+  for (index = 10; index < 27; index++) {
     print (index);
   }
 }
