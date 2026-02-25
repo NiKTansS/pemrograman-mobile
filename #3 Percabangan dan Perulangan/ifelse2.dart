@@ -1,6 +1,8 @@
 void main() {
   String test = "true";
-  if (test) {
+  if (test == "true") {
     print("Kebenaran");
+  } else {
+    print("Bukan true");
   }
 }
