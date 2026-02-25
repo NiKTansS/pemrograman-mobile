@@ -1,8 +1,7 @@
 void main() {
-  while (counter < 33) {
+  int counter = 0;
+  do {
     print(counter);
     counter++;
-  }
+  } while (counter < 77);
 }
-
-//Saat kode dijalankan, terjadi error karena variabel counter belum dideklarasikan. Di perbaiki dengan mendeklarasikan variabel counter bertipe int sebelum digunakan pada perulangan while
