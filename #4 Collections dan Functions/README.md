@@ -23,6 +23,37 @@ void main() {
 }
 Langkah 2:
 Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error
-Jawaban: Ketika kode dijalankan, program menampilkan output {fluorine, chlorine, bromine, iodine, astatine}. Hal ini karena kode tersebut menggunakan tipe data Set yang ditandai dengan tanda {} dan tidak memperbolehkan adanya data duplikat
+Jawaban: Ketika kode dijalankan, program menampilkan output {fluorine, chlorine, bromine, iodine, astatine}. Hal ini karena kode tersebut menggunakan tipe data Set yang ditandai dengan tanda {} dan tidak memperbolehkan adanya data duplikat\
 
+Langkah 3:
+var names1 = <String>{};
+Set<String> names2 = {}; // This works, too.
+var names3 = {}; // Creates a map, not a set.
+
+print(names1);
+print(names2);
+print(names3);
+
+Penjelasan: 
+
+
+====Praktikum 3: Eksperimen Tipe Data Maps====
+Langkah 1: 
+var gifts = {
+  // Key:    Value
+  'first': 'partridge',
+  'second': 'turtledoves',
+  'fifth': 1
+};
+
+var nobleGases = {
+  2: 'helium',
+  10: 'neon',
+  18: 2,
+};
+
+print(gifts);
+print(nobleGases);
+
+Langkah 2: Ketika kode dijalankan, program menampilkan data berupa Map. Variabel gifts berisi pasangan key dan value dengan key bertipe String, sedangkan nobleGases menggunakan key bertipe int. Output yang ditampilkan adalah seluruh pasangan key dan value dari masing-masing Map
 
