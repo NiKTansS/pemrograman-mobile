@@ -9,17 +9,20 @@ A new Flutter project.
 #Langkah 2: Image Widget
 ![Screenshot hello_world](images/03.png)
 
-#Langkah 3: Scaffold Widget
+#Langkah 2: Floating Action Button (FAB)
 ![Screenshot hello_world](images/04.png)
 
-#Langkah 4: Dialog Widget
+#Langkah 3: Scaffold Widget
 ![Screenshot hello_world](images/05.png)
 
-#Langkah 5: Input dan Selection Widget
+#Langkah 4: Dialog Widget
 ![Screenshot hello_world](images/06.png)
 
-#Langkah 6: Date and Time Pickers
+#Langkah 5: Input dan Selection Widget
 ![Screenshot hello_world](images/07.png)
+
+#Langkah 6: Date and Time Pickers
+![Screenshot hello_world](images/08.png)
 
 ## Getting Started
 
