@@ -32,6 +32,8 @@ This project is a starting point for a Flutter application.
 #5. Make the app prettier - hapus teks
 ![Screenshot hello_world](images/03g.png)
 
+#6. Menambahkan fungsi - widget row
+![Screenshot hello_world](images/04.png)
 A few resources to get you started if this is your first Flutter project:
 
 - [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
