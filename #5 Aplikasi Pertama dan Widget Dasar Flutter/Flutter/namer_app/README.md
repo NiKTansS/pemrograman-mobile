@@ -43,6 +43,10 @@ This project is a starting point for a Flutter application.
 
 #7. Menambahkan kolom samping navigasi - halaman favorite
 ![Screenshot hello_world](images/05b.png)
+
+#7. Menambahkan kolom samping navigasi - respons aplikasi
+![Screenshot hello_world](images/05c.png)
+
 A few resources to get you started if this is your first Flutter project:
 
 - [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
