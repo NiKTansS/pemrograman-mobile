@@ -20,8 +20,11 @@ This project is a starting point for a Flutter application.
 #5. Make the app prettier - warna widget card
 ![Screenshot hello_world](images/03b.png)
 
-##5. Make the app prettier - tema font
+#5. Make the app prettier - tema font
 ![Screenshot hello_world](images/03c.png)
+
+#5. Make the app prettier - menempatkan UI di tengah
+![Screenshot hello_world](images/03e.png)
 
 A few resources to get you started if this is your first Flutter project:
 
