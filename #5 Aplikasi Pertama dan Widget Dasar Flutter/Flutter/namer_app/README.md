@@ -8,6 +8,15 @@ This project is a starting point for a Flutter application.
 
 ![Screenshot hello_world](images/01.png)
 
+#4. Add a button
+![Screenshot hello_world](images/02.png)
+
+#4. Add a button - getNext method
+![Screenshot hello_world](images/02b.png)
+
+#Make the app prettier - menggabungkan widget Padding, dan juga Text, dengan widget Card
+![Screenshot hello_world](images/03.png)
+
 A few resources to get you started if this is your first Flutter project:
 
 - [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
