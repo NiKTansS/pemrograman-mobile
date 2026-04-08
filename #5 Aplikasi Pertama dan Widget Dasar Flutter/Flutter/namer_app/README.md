@@ -26,6 +26,9 @@ This project is a starting point for a Flutter application.
 #5. Make the app prettier - menempatkan UI di tengah
 ![Screenshot hello_world](images/03e.png)
 
+#5. Make the app prettier - UI center
+![Screenshot hello_world](images/03f.png)
+
 A few resources to get you started if this is your first Flutter project:
 
 - [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
