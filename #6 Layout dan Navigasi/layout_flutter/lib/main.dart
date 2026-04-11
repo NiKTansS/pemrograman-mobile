@@ -52,12 +52,7 @@ class MyApp extends StatelessWidget {
     Widget textSection = Container(
       padding: const EdgeInsets.all(32),
       child: const Text(
-        'Carilah teks di internet yang sesuai '
-        'dengan foto atau tempat wisata yang ingin '
-        'Anda tampilkan. '
-        'Tambahkan nama dan NIM Anda sebagai '
-        'identitas hasil pekerjaan Anda. '
-        'Selamat mengerjakan 🙂.',
+        'Malang Raya (Kota Malang, Kabupaten Malang, dan Kota Batu) adalah destinasi wisata lengkap yang menawarkan perpaduan udara sejuk pegunungan, taman hiburan tematik, hingga keindahan pantai selatan. Destinasi favorit meliputi Jatim Park, Museum Angkut, Gunung Bromo, serta berbagai coban (air terjun) dan Kampung Warna-Warni, menjadikannya opsi sempurna untuk liburan keluarga, alam, maupun instagramable. Niky Tania Sari (244107060053)',
         softWrap: true,
       ),
     );
@@ -67,6 +62,10 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: const Text('Flutter layout demo')),
         body: Column(children: [
+          Image.asset('images/swiss.jpeg',
+          width: 600,
+          height: 240,
+          fit: BoxFit.cover),
           titleSection, 
           buttonSection,
           textSection,
