@@ -7,16 +7,16 @@ A new Flutter project.
 This project is a starting point for a Flutter application.
 
 #Praktikum 1: Membangun Layout di Flutter
-![Screenshot layout_flutter](images/01.png)
+![Screenshot layout_flutter](images/01.jpeg)
 
 #Praktikum 2: Implementasi button row
-![Screenshot layout_flutter](images/02.png)
+![Screenshot layout_flutter](images/02.jpeg)
 
 #Praktikum 3: Implementasi text section
-![Screenshot layout_flutter](images/03.png)
+![Screenshot layout_flutter](images/03.jpeg)
 
 #Praktikum 4: Implementasi image section
-![Screenshot layout_flutter](images/04.png)
+![Screenshot layout_flutter](images/04.jpeg)
 
 A few resources to get you started if this is your first Flutter project:
 
