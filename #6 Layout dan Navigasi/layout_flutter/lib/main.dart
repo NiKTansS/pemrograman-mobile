@@ -61,7 +61,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter layout: Niky Tania Sari dan 244107060053',
       home: Scaffold(
         appBar: AppBar(title: const Text('Flutter layout demo')),
-        body: Column(children: [
+        body: ListView(children: [
           Image.asset('images/swiss.jpeg',
           width: 600,
           height: 240,
