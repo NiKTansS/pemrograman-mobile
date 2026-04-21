@@ -7,10 +7,10 @@ A new Flutter project.
 This project is a starting point for a Flutter application.
 
 Tampilan List
-![Screenshot belanja](images/01.jpeg)
+![Screenshot belanja](images/01.png)
 
 Tampilan Detail List
-![Screenshot belanja](images/02.jpeg)
+![Screenshot belanja](images/02.png)
 
 A few resources to get you started if this is your first Flutter project:
 
