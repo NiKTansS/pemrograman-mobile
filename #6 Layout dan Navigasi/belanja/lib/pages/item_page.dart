@@ -13,8 +13,11 @@ class ItemPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Hero(tag: itemArgs.name, child: Image.asset(itemArgs.images)),
             Text('Nama Barang: ${itemArgs.name}'),
             Text('Harga: ${itemArgs.price}'),
+            Text('Stock: ${itemArgs.stock}'),
+            Text('⭐: ${itemArgs.rating}'),
           ],
         ),
       ),
