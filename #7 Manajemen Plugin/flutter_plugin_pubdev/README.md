@@ -5,16 +5,24 @@ A new Flutter project.
 ## 7. Praktikum Menerapkan Plugin di Project Flutter
 
 ### Langkah 4: Tambah Widget AutoSizeText
-Masih di file red_text_widget.dart, untuk menggunakan plugin auto_size_text, ubahlah kode return Container() menjadi seperti berikut.
+Masih di file `red_text_widget.dart`, untuk menggunakan plugin `auto_size_text`, 
+ubahlah kode `return Container()` menjadi seperti berikut:
 
+```dart
 return AutoSizeText(
-      text,
-      style: const TextStyle(color: Colors.red, fontSize: 14),
-      maxLines: 2,
-      overflow: TextOverflow.ellipsis,
+  text,
+  style: const TextStyle(color: Colors.red, fontSize: 14),
+  maxLines: 2,
+  overflow: TextOverflow.ellipsis,
 );
-Setelah Anda menambahkan kode di atas, Anda akan mendapatkan info error. Mengapa demikian? Jelaskan dalam laporan praktikum Anda!
-Jawaban: Error di bagian text karena variabel belum dibuat
+```
+
+Setelah Anda menambahkan kode di atas, Anda akan mendapatkan info error. 
+Mengapa demikian? Jelaskan dalam laporan praktikum Anda!
+
+**Jawaban:** Error terjadi karena variabel `text` belum dideklarasikan 
+sebagai parameter di class `RedTextWidget`.
+
 
 A few resources to get you started if this is your first Flutter project:
 
