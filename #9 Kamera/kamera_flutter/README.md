@@ -255,10 +255,30 @@ try {
 ## Tugas Praktikum
 1. Selesaikan Praktikum 1 dan 2, lalu dokumentasikan dan push ke repository Anda berupa screenshot setiap hasil pekerjaan beserta penjelasannya di file README.md! Jika terdapat error atau kode yang tidak dapat berjalan, silakan Anda perbaiki sesuai tujuan aplikasi dibuat!
 2. Gabungkan hasil praktikum 1 dengan hasil praktikum 2 sehingga setelah melakukan pengambilan foto, dapat dibuat filter carouselnya!
-3. Jelaskan maksud `void async` pada praktikum 1?
-4. Jelaskan fungsi dari anotasi `@immutable` dan `@override` ?
-5. Kumpulkan link commit repository GitHub Anda kepada dosen yang telah disepakati!
 
+**Jawaban:** ada di folder `kamera_filter_app`
+
+![Screnshoot](images/hasil_soalno2.gif)
+
+3. Jelaskan maksud `void async` pada praktikum 1?
+
+**Jawaban:** `async` menandakan fungsi berjalan asynchronous karena ada proses `availableCameras()` (akses kamera) yang butuh waktu
+
+`async`: ada proses async di dalam fungsi
+`await`: menunggu proses selesai terlebihdahulu 
+`Future<void>`:tidak mengembalikan nilai, hanya menjalankan proses async
+
+Tanpa `async` dan `await`, kamera belum siap saat `runApp()` dijalankan
+
+4. Jelaskan fungsi dari anotasi `@immutable` dan `@override` ?
+
+**Jawaban:** 
+`@immutable`: class tidak boleh berubah, semua variabel harus `final` (stateless). Contohnya pada `FilterSelector` dan `FilterItem` yang di mana setelah objek dibuat, nilainya tidak bisa berubah
+
+`@override`: method menimpa method parent seperti `build()`, `initState()`, `dispose()` yang merupakan method dari class `StatefulWidget` atau `StatelessWidget` yang di-override untuk disesuaikan dengan kebutuhan
+
+
+5. Kumpulkan link commit repository GitHub Anda kepada dosen yang telah disepakati!
 
 
 
