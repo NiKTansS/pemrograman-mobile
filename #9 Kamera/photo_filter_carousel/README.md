@@ -3,13 +3,12 @@
 ## Praktikum 2: Membuat photo filter carousel
 
 ### Langkah 1: Buat project baru
+
 Buatlah project flutter baru di pertemuan 09 dengan nama `photo_filter_carousel`.
 
-
-
 ### Langkah 2: Buat widget Selector ring dan dark gradient
-Buatlah folder `widget` dan file baru yang berisi kode berikut.
 
+Buatlah folder `widget` dan file baru yang berisi kode berikut.
 
 lib/widget/filter_selector.dart
 
@@ -176,8 +175,6 @@ class _FilterSelectorState extends State<FilterSelector> {
 }
 ```
 
-
-
 ### Langkah 3: Buat widget photo filter carousel
 
 Buat file baru di folder `widget` dengan kode seperti berikut.
@@ -253,8 +250,6 @@ class _PhotoFilterCarouselState extends State<PhotoFilterCarousel> {
 }
 ```
 
-
-
 ### Langkah 4: Membuat filter warna - bagian 1
 
 Buat file baru di folder `widget` seperti kode berikut.
@@ -326,12 +321,9 @@ class CarouselFlowDelegate extends FlowDelegate {
 }
 ```
 
-
-
 ### Langkah 5: Membuat filter warna
+
 Buat file baru di folder widget seperti kode berikut ini.
-
-
 
 lib/widget/filter_item.dart
 
@@ -370,14 +362,11 @@ class FilterItem extends StatelessWidget {
 }
 ```
 
-
-
 ### Langkah 6: Implementasi filter carousel
+
 Terakhir, kita impor widget `PhotoFilterCarousel` ke `main.dart` seperti kode beriku ini.
 
-
 lib/main.dart
-
 
 ```dart
 void main() {
@@ -389,7 +378,6 @@ void main() {
   );
 }
 ```
-
 
 ### Troubleshoot
 
@@ -404,9 +392,8 @@ import 'package:flutter/rendering.dart' show ViewportOffset;
 
 ![Screnshoot](assets/images/hasil.gif)
 
-
-
 ## Tugas Praktikum
+
 1. Selesaikan Praktikum 1 dan 2, lalu dokumentasikan dan push ke repository Anda berupa screenshot setiap hasil pekerjaan beserta penjelasannya di file README.md! Jika terdapat error atau kode yang tidak dapat berjalan, silakan Anda perbaiki sesuai tujuan aplikasi dibuat!
 2. Gabungkan hasil praktikum 1 dengan hasil praktikum 2 sehingga setelah melakukan pengambilan foto, dapat dibuat filter carouselnya!
 
@@ -419,22 +406,19 @@ import 'package:flutter/rendering.dart' show ViewportOffset;
 **Jawaban:** `async` menandakan fungsi berjalan asynchronous karena ada proses `availableCameras()` (akses kamera) yang butuh waktu
 
 `async`: ada proses async di dalam fungsi
-`await`: menunggu proses selesai terlebihdahulu 
+`await`: menunggu proses selesai terlebihdahulu
 `Future<void>`:tidak mengembalikan nilai, hanya menjalankan proses async
 
 Tanpa `async` dan `await`, kamera belum siap saat `runApp()` dijalankan
 
 4. Jelaskan fungsi dari anotasi `@immutable` dan `@override` ?
 
-**Jawaban:** 
+**Jawaban:**
 `@immutable`: class tidak boleh berubah, semua variabel harus `final` (stateless). Contohnya pada `FilterSelector` dan `FilterItem` yang di mana setelah objek dibuat, nilainya tidak bisa berubah
 
 `@override`: method menimpa method parent seperti `build()`, `initState()`, `dispose()` yang merupakan method dari class `StatefulWidget` atau `StatelessWidget` yang di-override untuk disesuaikan dengan kebutuhan
 
-
 5. Kumpulkan link commit repository GitHub Anda kepada dosen yang telah disepakati!
-
-
 
 A few resources to get you started if this is your first Flutter project:
 
