@@ -402,7 +402,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart' show ViewportOffset;
 ```
 
-![Screnshoot](images/hasil.gif)
+![Screnshoot](assets/images/hasil.gif)
 
 
 
