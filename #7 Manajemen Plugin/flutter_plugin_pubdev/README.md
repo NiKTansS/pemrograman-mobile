@@ -15,6 +15,11 @@ flutter pub add auto_size_text
 
 Jika berhasil, maka akan tampil nama plugin beserta versinya di file `pubspec.yaml` pada bagian dependencies.
 
+**Jawaban:** proses ini merupakan menambahkan plugin eksternal bernama `auto_size_text` ke dalam project Flutter. Perintah `flutter pub add auto_size_text` secara otomatis mengunduh plugin tersebut dari pub.dev dan mendaftarkannya di file `pubspec.yaml` pada bagian `dependencies`. Plugin ini berfungsi untuk membuat teks otomatis menyesuaikan ukurannya agar pas di dalam batas widget yang ditentukan
+
+![Screenshot](images/02.png)
+
+
 
 ### Langkah 3: Buat file `red_text_widget.dart`
 Membuat file baru bernama `red_text_widget.dart` di dalam folder `lib` dengan isi kode berikut:
@@ -31,6 +36,7 @@ class RedTextWidget extends StatelessWidget {
   }
 }
 ```
+
 
 
 ### Langkah 4: Tambah Widget AutoSizeText
@@ -51,6 +57,7 @@ Setelah Anda menambahkan kode di atas, Anda akan mendapatkan info error. Mengapa
 **Jawaban:** Error terjadi karena variabel `text` belum dideklarasikan sebagai parameter di class `RedTextWidget`, sehingga Flutter tidak mengenali variabel tersebut
 
 
+
 ### Langkah 5: Buat Variabel text dan parameter di constructor
 Tambahkan variabel `text` dan parameter di constructor seperti berikut.
 
@@ -59,6 +66,11 @@ final String text;
 
 const RedTextWidget({Key? key, required this.text}) : super(key: key);
 ```
+
+Jelaskan maksud dari langkah 5 pada praktikum tersebut!
+
+**Jawaban:** menambahkan variabel `text` bertipe `String` dan menjadikannya parameter wajib (`required`) di constructor class `RedTextWidget`. Hal ini diperlukan agar widget dapat menerima data teks dari luar (dari widget pemanggil), sehingga teks yang ditampilkan bisa berbeda-beda tergantung nilai yang dikirimkan
+
 
 
 ### Langkah 6: Tambahkan widget di main.dart
@@ -81,7 +93,20 @@ Container(
 ),
 ```
 
+Pada langkah 6 terdapat dua widget yang ditambahkan, jelaskan fungsi dan perbedaannya!
+
+**Jawaban:**
+
+**Widget pertama** menggunakan `RedTextWidget` dengan lebar container 50 piksel dan warna kuning. Widget ini memakai `AutoSizeText` sehingga teks akan otomatis mengecil dan terpotong (`ellipsis`) jika tidak muat dalam lebar 50 piksel
+
+**Widget kedua** menggunakan `Text` biasa dengan lebar container 100 piksel dan warna hijau. Widget ini tidak memiliki kemampuan auto resize, sehingga teks bisa melampaui keluar batas container jika terlalu panjang
+
+**Perbedaan utamanya:** `RedTextWidget` (AutoSizeText) menyesuaikan ukuran font secara otomatis, sedangkan `Text` biasa tidak
+
+
 Run aplikasi tersebut dengan tekan F5, maka hasilnya akan seperti berikut.
+
+![Screenshot](images/01.png)
 
 
 A few resources to get you started if this is your first Flutter project:
