@@ -1,5 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'displaypicture_screen.dart';
 
 
 // A screen that allows users to take a picture using a given camera.
@@ -73,6 +74,19 @@ class TakePictureScreenState extends State<TakePictureScreen> {
             // Attempt to take a picture and get the file `image`
             // where it was saved.
             final image = await _controller.takePicture();
+
+            if (!context.mounted) return;
+
+            // If the picture was taken, display it on a new screen.
+            await Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => DisplayPictureScreen(
+                  // Pass the automatically generated path to
+                  // the DisplayPictureScreen widget.
+                  imagePath: image.path,
+                ),
+              ),
+            );
           } catch (e) {
             // If an error occurs, log the error to the console.
             print(e);
