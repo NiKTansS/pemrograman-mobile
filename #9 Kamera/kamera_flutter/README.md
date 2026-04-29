@@ -138,7 +138,7 @@ Widget build(BuildContext context) {
 }
 ```
 
-![Screnshoot](images/02.png)
+![Screnshoot](images/02.jpeg)
 
 
 
@@ -174,7 +174,7 @@ FloatingActionButton(
 )
 ```
 
-![Screnshoot](images/03.png)
+![Screnshoot](images/03.jpeg)
 
 
 ### Langkah 7: Buat widget DisplayPictureScreen
@@ -248,7 +248,7 @@ try {
 }
 ```
 
-![Screnshoot](images/04.png)
+![Screnshoot](images/04.jpeg)
 
 
 
