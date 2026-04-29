@@ -3,17 +3,16 @@
 ## Praktikum 1: Mengambil Foto dengan Kamera di Flutter
 
 ### Langkah 1: Buat Project Baru
+
 Membuat project Flutter baru dengan nama `kamera_flutter`.
 
-
-
 ### Langkah 2: Tambah dependensi yang diperlukan
+
 Anda memerlukan tiga dependensi pada project flutter untuk menyelesaikan praktikum ini.
 
 - `camera` → menyediakan seperangkat alat untuk bekerja dengan kamera pada device
 - `path_provider` → menyediakan lokasi atau path untuk menyimpan hasil foto
 - `path` → membuat path untuk mendukung berbagai platform
-
 
 Untuk menambahkan dependensi plugin, jalankan perintah flutter pub add seperti berikut di terminal:
 
@@ -30,11 +29,9 @@ flutter pub add camera path_provider path
 
 ![Screnshoot](images/01.png)
 
-
-
 ### Langkah 3: Ambil Sensor Kamera dari device
-Selanjutnya, kita perlu mengecek jumlah kamera yang tersedia pada perangkat menggunakan plugin `camera` seperti pada kode berikut ini. Kode ini letakkan dalam `void main()`.
 
+Selanjutnya, kita perlu mengecek jumlah kamera yang tersedia pada perangkat menggunakan plugin `camera` seperti pada kode berikut ini. Kode ini letakkan dalam `void main()`.
 
 lib/main.dart
 
@@ -43,7 +40,6 @@ WidgetsFlutterBinding.ensureInitialized();
 final cameras = await availableCameras();
 final firstCamera = cameras.first;
 ```
-
 
 Ubah `void main()` menjadi async function seperti berikut ini.
 
@@ -55,8 +51,6 @@ Future<void> main() async {
 }
 ```
 
-
-
 ### Langkah 4: Buat dan inisialisasi CameraController
 
 Setelah Anda dapat mengakses kamera, gunakan langkah-langkah berikut untuk membuat dan menginisialisasi `CameraController`. Pada langkah berikut ini, Anda akan membuat koneksi ke kamera perangkat yang memungkinkan Anda untuk mengontrol kamera dan menampilkan pratinjau umpan kamera.
@@ -66,7 +60,6 @@ Setelah Anda dapat mengakses kamera, gunakan langkah-langkah berikut untuk membu
 3. Tambahkan variabel ke kelas `State` untuk menyimpan `Future` yang dikembalikan dari `CameraController.initialize()`.
 4. Buat dan inisialisasi controller dalam metode `initState()`.
 5. Hapus controller dalam metode `dispose()`.
-
 
 lib/widget/takepicture_screen.dart
 
@@ -110,12 +103,9 @@ class TakePictureScreenState extends State<TakePictureScreen> {
 }
 ```
 
-
-
 ### Langkah 5: Gunakan `CameraPreview` untuk menampilkan preview foto
 
 Gunakan widget `CameraPreview` dari package `camera` untuk menampilkan preview foto. Anda perlu tipe objek void berupa `FutureBuilder` untuk menangani proses async.
-
 
 lib/widget/takepicture_screen.dart
 
@@ -140,8 +130,6 @@ Widget build(BuildContext context) {
 
 ![Screnshoot](images/02.jpeg)
 
-
-
 ### Langkah 6: Ambil foto dengan CameraController
 
 Anda dapat menggunakan `CameraController` untuk mengambil gambar menggunakan metode `takePicture()`, yang mengembalikan objek `XFile`, merupakan sebuah objek abstraksi `File` lintas platform yang disederhanakan. Pada Android dan iOS, gambar baru disimpan dalam direktori cache masing-masing, dan `path` ke lokasi tersebut dikembalikan dalam `XFile`.
@@ -153,10 +141,9 @@ Pengambilan gambar memerlukan 2 langkah:
 1. Pastikan kamera telah diinisialisasi.
 2. Gunakan controller untuk mengambil gambar dan pastikan ia mengembalikan objek `Future`.
 
-Praktik baik untuk membungkus operasi kode ini dalam blok `try / catch` guna menangani berbagai kesalahan yang mungkin terjadi. 
+Praktik baik untuk membungkus operasi kode ini dalam blok `try / catch` guna menangani berbagai kesalahan yang mungkin terjadi.
 
 Kode berikut letakkan dalam `Widget build` setelah field `body`.
-
 
 lib/widget/takepicture_screen.dart
 
@@ -176,10 +163,9 @@ FloatingActionButton(
 
 ![Screnshoot](images/03.jpeg)
 
-
 ### Langkah 7: Buat widget DisplayPictureScreen
-Buatlah file baru pada folder widget yang berisi kode berikut.
 
+Buatlah file baru pada folder widget yang berisi kode berikut.
 
 lib/widget/displaypicture_screen.dart
 
@@ -199,12 +185,9 @@ class DisplayPictureScreen extends StatelessWidget {
 }
 ```
 
-
-
 ### Langkah 8: Edit main.dart
 
 Edit pada file ini bagian runApp seperti kode berikut.
-
 
 lib/main.dart
 
@@ -220,12 +203,9 @@ runApp(
 );
 ```
 
-
-
 ### Langkah 9: Menampilkan hasil foto
 
 Tambahkan kode seperti berikut pada bagian `try / catch` agar dapat menampilkan hasil foto pada `DisplayPictureScreen`.
-
 
 lib/widget/takepicture_screen.dart
 
@@ -250,9 +230,8 @@ try {
 
 ![Screnshoot](images/04.jpeg)
 
-
-
 ## Tugas Praktikum
+
 1. Selesaikan Praktikum 1 dan 2, lalu dokumentasikan dan push ke repository Anda berupa screenshot setiap hasil pekerjaan beserta penjelasannya di file README.md! Jika terdapat error atau kode yang tidak dapat berjalan, silakan Anda perbaiki sesuai tujuan aplikasi dibuat!
 2. Gabungkan hasil praktikum 1 dengan hasil praktikum 2 sehingga setelah melakukan pengambilan foto, dapat dibuat filter carouselnya!
 
@@ -265,22 +244,19 @@ try {
 **Jawaban:** `async` menandakan fungsi berjalan asynchronous karena ada proses `availableCameras()` (akses kamera) yang butuh waktu
 
 `async`: ada proses async di dalam fungsi
-`await`: menunggu proses selesai terlebihdahulu 
+`await`: menunggu proses selesai terlebihdahulu
 `Future<void>`:tidak mengembalikan nilai, hanya menjalankan proses async
 
 Tanpa `async` dan `await`, kamera belum siap saat `runApp()` dijalankan
 
 4. Jelaskan fungsi dari anotasi `@immutable` dan `@override` ?
 
-**Jawaban:** 
+**Jawaban:**
 `@immutable`: class tidak boleh berubah, semua variabel harus `final` (stateless). Contohnya pada `FilterSelector` dan `FilterItem` yang di mana setelah objek dibuat, nilainya tidak bisa berubah
 
 `@override`: method menimpa method parent seperti `build()`, `initState()`, `dispose()` yang merupakan method dari class `StatefulWidget` atau `StatelessWidget` yang di-override untuk disesuaikan dengan kebutuhan
 
-
 5. Kumpulkan link commit repository GitHub Anda kepada dosen yang telah disepakati!
-
-
 
 A few resources to get you started if this is your first Flutter project:
 

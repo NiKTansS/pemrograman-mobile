@@ -1,10 +1,11 @@
 # kamera_filter_app
 
-A new Flutter project.
+
+![Screnshoot](images/hasil_soalno2.gif)
+
+Foto yang diambil menggunakan `CameraController` pada `TakePictureScreen` disimpan dan dikirim dalam bentuk path (`image.path`) ke halaman `PhotoFilterCarousel` melalui `Navigator`. Selanjutnya, foto tersebut ditampilkan menggunakan `Image.file` di dalam class `PhotoFilterCarousel`, lalu diberikan efek warna yang dapat diubah melalui filter carousel. Dengan begitu, setelah mengambil gambar, pengguna dapat langsung melihat dan menggeser berbagai filter secara interaktif pada foto tersebut
 
 
-
-## Getting Started
 
 This project is a starting point for a Flutter application.
 
